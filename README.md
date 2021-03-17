@@ -1,4 +1,5 @@
 # Kassogtha
+<<<<<<< HEAD
 ### Annotation application to edit localizations created in MBARI's Cthulthu   
 #### Useful Links:
 -[UI_MOCKUP via draw.io](draw.io)  
@@ -9,6 +10,8 @@
 - [X] Prototype application using gradle or maven   
 - [ ] Add 2 seperate working UIs to prototype
 - [ ] Create some sample programs that use JavaFX
+=======
+>>>>>>> a0c455e304137270e0a8dbca3d1ad1456af8b3cf
 
 
 
