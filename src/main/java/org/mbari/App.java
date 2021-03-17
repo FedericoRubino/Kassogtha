@@ -35,6 +35,8 @@ public class App extends Application {
         // stage.setScene(scene);
         // stage.show();
 
+        // ------------------------------- Table --------------------------------------------
+
         var table = new TableView<Localization>();
         table.setEditable(false);
 
@@ -65,9 +67,13 @@ public class App extends Application {
 
         table.getColumns().addAll(timeCol, conceptCol);
 
+        // ------------------------------- Table --------------------------------------------
+
+
 
         // VBox vBox = new VBox();
         // var sceneEmpty = new Scene(vBox, 480, 480);
+
         ListView listview = new ListView();
         listview.getItems().add("ITEM1");
         listview.getItems().add("ITEM2");
@@ -75,18 +81,29 @@ public class App extends Application {
         listview.getItems().add("ITEM4");
 
         HBox hBox = new HBox(listview, table);
+
         hBox.setMargin(listview, new Insets(20,20,20,20));
         hBox.setMargin(table, new Insets(20,20,20,20));
 
+
+        // ------------------------------- Buttons --------------------------------------------
 
         Button saveBtn = new Button("Save");
         Button downLoadBtn = new Button("Download");
         Button upLoadBtn = new Button("Upload");
         HBox hButtonBox = new HBox(saveBtn, downLoadBtn, upLoadBtn);
+        
+        hButtonBox.setMargin(saveBtn, new Insets(20,20,20,20));
+        hButtonBox.setMargin(downLoadBtn, new Insets(20,20,20,20));
+        hButtonBox.setMargin(upLoadBtn, new Insets(20,20,20,20));
+        
+        // ------------------------------- Buttons --------------------------------------------
 
 
         VBox containerBox = new VBox(hBox, hButtonBox);
 
+
+        // ------------------------------- Stage --------------------------------------------
 
         var scene = new Scene(containerBox, 700, 520);
         // scene.setResizable(false);
@@ -96,6 +113,9 @@ public class App extends Application {
         stage.show();
 
         initComms(table);
+
+        // ------------------------------- Stage --------------------------------------------
+
     }
 
     private String formatDuration(Duration duration) {

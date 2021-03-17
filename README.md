@@ -1,11 +1,15 @@
-# oryx
+# Kassogtha
+### Annotation application to edit localizations created in MBARI's Cthulthu   
+#### Useful Links:
+-[UI_MOCKUP via draw.io](draw.io)  
+-[Scene Builder](https://gluonhq.com/products/scene-builder)  
+-
+#### To Do:  
+- [X] Complete [UI_Mockup](https://github.com/XYIAN/Kassogtha/blob/main/UI_Mockup.drawio)  
+- [X] Prototype application using gradle or maven   
+- [ ] Add 2 seperate working UIs to prototype
+- [ ] Create some sample programs that use JavaFX
 
-A simple UI application that displays Localization events as they are published from [Cthulhu](https://github.com/mbari-media-management/cthulhu).
 
-## Quick Start
 
-```sh
-mvn clean javafx:run
-```
-
-See also [ghroth](https://github.com/mbari-media-management/ghroth) which is a sister application that can used to generate test localizations.
+ 
