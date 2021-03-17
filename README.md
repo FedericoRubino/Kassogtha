@@ -1,4 +1,4 @@
-# oryx
+# Kassogtha
 
 A simple UI application that displays Localization events as they are published from [Cthulhu](https://github.com/mbari-media-management/cthulhu).
 
